@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+@keyframes app-animation {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
+.content {
+  animation: app-animation 3s ease-in forwards;
+}
