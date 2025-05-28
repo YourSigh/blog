@@ -1,4 +1,6 @@
 import styled, { keyframes } from "styled-components";
+import naXiDaScan from '@src/assets/纳西妲扫描.png';
+import scan from '@src/assets/扫描.png';
 
 const fadeOutAnimation = keyframes`
     0% {
@@ -44,8 +46,16 @@ const BuerWrapper = styled.div`
 export default function Buer() {
     return (
         <BuerWrapper>
-            <img src="/src/assets/纳西妲扫描.png" alt="纳西妲" className="img-buer"/>
-            <img src="/src/assets/扫描.png" alt="扫描" className="img-scan"/>
+            <img 
+                src={naXiDaScan} 
+                alt="纳西妲" 
+                className="img-buer"
+            />
+            <img
+                src={scan}
+                alt="扫描"
+                className="img-scan"
+            />
         </BuerWrapper>
-    )
+    );
 }
