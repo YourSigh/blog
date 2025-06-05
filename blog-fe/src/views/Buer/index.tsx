@@ -13,6 +13,7 @@ const fadeOutAnimation = keyframes`
     100% {
         transform: scale(4);
         opacity: 0;
+        display: none;
     }
 `;
 
